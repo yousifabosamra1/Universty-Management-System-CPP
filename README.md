@@ -2,7 +2,9 @@
 
 A complete **University Management System** built using **C++ (OOP + Data Structures + File Handling)**.
 
-This project simulates a real university system where **Students and Admins** manage academic data through a console-based interface.
+This project simulates a real university environment where **Students and Admins** manage academic data through a console-based interface.
+
+The system is designed using **Object-Oriented Programming principles** and structured classes.
 
 ---
 
@@ -14,7 +16,7 @@ This project simulates a real university system where **Students and Admins** ma
 - View Profile
 - Edit Profile
 - Change Password
-- Register Courses
+- Register Courses (Multi-selection)
 - View Registered Courses
 - Course Schedule
 - Grades System
@@ -53,22 +55,20 @@ This project simulates a real university system where **Students and Admins** ma
 - Object-Oriented Programming (OOP)
 - Data Structures
 - File Handling
-- Console Interface
+- Console User Interface
 
 ---
 
-## 🎮 Navigation
+## 🎮 Navigation Controls
 
-Keyboard Controls:
-
-- Arrow Keys → Navigation
+- Arrow Keys → Move
 - Enter → Select
-- Space → Multi-select Courses
+- Space → Select Courses
 - ESC → Back
 
 ---
 
-## 🏫 Faculty
+## 🏫 Supported Faculty
 
 ### Computer & Information
 
@@ -89,9 +89,44 @@ Levels:
 
 ---
 
+## 📁 Required Files
+
+These files must exist in the same folder as the program:
+
+
+
+Student.txt
+Enrollments.txt
+Scores.txt
+Admins.txt
+
+
 ---
 
-## 🏗️ Main Classes
+## 📄 Student File Format
+
+ID#//#FullName#//#Password#//#Email#//#Phone#//#Faculty#//#Department#//#Level
+
+
+---
+
+## 📄 Enrollments File Format
+
+StudentID~CourseID
+
+
+---
+
+## 📄 Scores File Format
+
+StudentID#//#CourseID#//#Quiz#//#Mid#//#Practical#//#Final
+
+
+---
+
+## 🏗️ System Architecture
+
+Main Classes:
 
 - clsStudent
 - clsCourse
@@ -107,9 +142,37 @@ Levels:
 
 ## 💻 How To Run
 
-1. Open the project in Visual Studio
+1. Open the project in **Visual Studio**
 
 2. Make sure these files exist:
+
+---
+
+## 🏗️ System Architecture
+
+Main Classes:
+
+- clsStudent
+- clsCourse
+- clsRegisterScreen
+- clsSubjectScreen
+- clsScheduleScreen
+- clsGradesScreen
+- clsAdmin
+- clsAdminMainMenuScreen
+- clsChooseScreen
+
+---
+
+## 💻 How To Run
+
+1. Open the project in **Visual Studio**
+
+2. Make sure these files exist:
+Student.txt
+Enrollments.txt
+Scores.txt
+Admins.txt
 
 3. Run the program
 
@@ -117,16 +180,18 @@ Levels:
 
 ## ⭐ Project Highlights
 
-- OOP Design
-- File Database System
-- Student & Admin Systems
-- Course Registration
+- Advanced OOP Design
+- File-Based Database
+- Admin & Student Systems
+- Course Registration System
 - Grades System
 - Interactive Console UI
 
 ---
 
 ## 👨‍💻 Author
+
+**Yousif**
 
 Cyber Security Student  
 Future Penetration Tester
